@@ -25,10 +25,10 @@ git clone https://github.com/yasincebeci/k8s-vagrant.git
 cd k8s-vagrant
 
 # Runing pods and services
-kubectl create -f db-pod.yml
-kubectl create -f db-svc.yml
-kubectl create -f web-pod-.yml
 kubectl create -f web-svc.yml
+kubectl create -f db-svc.yml
+kubectl create -f db-pod.yml
+kubectl create -f web-pod.yml
 
 sleep 60
 
