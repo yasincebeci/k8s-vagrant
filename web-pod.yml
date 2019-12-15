@@ -1,0 +1,18 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: web1
+  labels:
+    name: web
+    app: demo
+spec:
+  containers:
+    - name: python
+      image: yasincebeci/p2a37:v1
+      env:       
+        - name: "app_host"
+          value: "localhost"
+      ports:
+        - containerPort: 3000
+          name: http
+          protocol: TCP
