@@ -23,7 +23,7 @@ chown -R vagrant:vagrant /home/vagrant/.kube
 git clone https://github.com/yasincebeci/k8s-vagrant.git
 
 cd k8s-vagrant
-
+sleep 60
 # Runing pods and services
 kubectl create -f web-svc.yml
 kubectl create -f db-svc.yml
